@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.img{
+    width: 80%;  
+    height:80%;
+}
+body{
+    background-color: rgb(246, 236, 222);
+}
+.container{
+    margin: auto;
+    max-width: width 1200px;
+    width: 95%;
+    display:flex;
+    flex-flow: row wrap;
+}
+
+header, footer{
+    background-color: rgb(35, 90, 45);
+    color:rgb(116, 142, 73);
+    padding: 1em;
+
+    align-items: center;
+    display:flex;
+    flex-basis: 100%;
+    flex-flow:row wrap ;
+    justify-content:space-between;
+}
+nav{
+    background-color:rgb(144, 142, 107) ;
+    padding: 1em;
+    text-align: center;
+    flex-basis: 50%;
+}
+header nav a{
+    color: azure;
+    padding:1em;
+
+    justify-content: space-around;
+}
+header nav a:hover{
+background-color:rgb(2, 62, 2) ;
+
+}
+section{
+    background-color:rgb(218, 219, 204) ;
+    flex: 1 1 60%;
+    padding: 1.5em;
+}
+
+section p, section hr{
+   margin-bottom: 1em;
+}
+aside{
+    background-color:rgb(234, 229, 204) ;
+    flex: 1 1 40%;
+}
+aside p{
+    background-color:rgb(210, 207, 193) ;
+    margin: 1em;
+    padding: 1em;
+}
+
+footer{
+    padding: 1.5em 0;
+    bottom: 0;
+    justify-content: center;
+    float: left;
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    padding: 0.5em 0 0.5em 0;
+}
+
+@media(max-widht:760){
+
+    .container{
+    flex-direction: column;
+    }
+    header{
+    
+    margin: 0;
+    padding: 0;
+
+    justify-content: center;    
+    }
+
+    header nav{
+    flex-basis: 100%;
+    }
+
+    h2{
+    padding: 1.5em 0;
+    }
+}
